@@ -8,7 +8,7 @@ public class Client {
     InputStream is = null;
 
     try {
-      comm = new Socket("localhost", 10080);
+      comm = new Socket("localhost", 10080); //IP + PORT
 
       Scanner sc = new Scanner(System.in);
       System.out.println("Réponse :");

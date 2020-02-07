@@ -13,8 +13,13 @@ public class Serveur {
 
       is = comm.getInputStream();
       int c;
-      while ((c = is.read()) != -1)
-        System.out.write(c);
+      while ((c = is.read()) != -1) {
+        char ch = (char) c;
+        //char data[] = {'a', 'b', 'c'};
+        System.out.println(ch.length);
+
+        System.out.println(ch);;
+      }
     } catch (Exception e) {
       System.err.println("Exception " + e.toString());
     } finally {
