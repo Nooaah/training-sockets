@@ -44,7 +44,11 @@ public class Serveur3 {
                         msg = in.readLine();
                         // tant que le client est connecté
                         while (msg != null) {
-                            System.out.println("Client : " + msg);
+                            if (msg.equals("oui")) {
+                                System.out.println("Bien joué ! la bonne réponse était oui ! : " + msg);
+                            } else {
+                                System.out.println("Client : " + msg);
+                            }
                             msg = in.readLine();
                         }
                         // sortir de la boucle si le client a déconecté
